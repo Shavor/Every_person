@@ -1,0 +1,22 @@
+.header {
+	padding: 17px 0;
+
+	&__container {
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&--position {
+		position: absolute;
+		z-index: 10;
+		left: 0;
+		top: 0;
+		width: 100%;
+	}
+}
+
+.header__nav {
+	@include tablet {
+		display: none;
+	}
+}

@@ -1,0 +1,43 @@
+.nav {
+	align-items: center;
+	padding-right: 16px;
+
+	&__list {
+		margin-right: 32px;
+		gap: 51px;
+	}
+
+	&__link {
+		font-size: var(--main-size);
+		transition: color 0.3s ease-in-out;
+		color: var(--light-color);
+
+		&:focus {
+			outline: none;
+		}
+
+		@include hover {
+			color: var(--accent);
+		}
+
+		&:active {
+			color: var(--active-color)
+		}
+	}
+
+	@include mobile {
+		display: none;
+	}
+}
+
+.nav__link:focus-visible {
+	outline: 1px solid var(--active-color);
+}
+
+.mobile-nav-btn {
+	display: none;
+
+	@include mobile {
+		display: block;
+	}
+}

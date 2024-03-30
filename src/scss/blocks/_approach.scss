@@ -1,0 +1,144 @@
+.approach {
+
+	&__top {
+		background-color: #F7F8F8;
+		padding: 80px 0;
+
+		@include mobile {
+			padding: 10px;
+		}
+	}
+
+	&__left {
+		grid-column: 5 span;
+		padding-top: 33px;
+
+		@include mobile {
+			grid-column: 12 span;
+			padding-bottom: 20px
+		}
+
+		@include mobile-736 {
+			grid-column: 4 span;
+		}
+	}
+
+	&__title {
+		margin: 0;
+		margin-bottom: 13px;
+		font-size: 22px;
+		font-family: var(--font-main);
+		font-weight: 400;
+		line-height: 1;
+		color: #003331;
+	}
+
+	&__desc {
+		margin: 0;
+		margin-bottom: 37px;
+		font-size: var(--second);
+		font-family: var(--font-main);
+		font-weight: 400;
+		line-height: 1.6;
+		color: rgba(53, 83, 98, 0.82)
+	}
+
+	&__btn {
+		color: #003331;
+		border-color: rgba(53, 83, 98, 0.203);
+	}
+
+	&__right {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-end;
+		gap: 5px;
+		grid-column: 7/6 span;
+
+		@include mobile {
+			grid-column: 5/6 span;
+		}
+
+		@include mobile-736 {
+			grid-column: 4 span;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		// @include mobile-415 {
+		// 	grid-column: 4/1 span;
+		// }
+
+		@include min-mobile {
+			grid-column: 2 span;
+		}
+	}
+
+	&__item {
+		grid-column: 2 span;
+
+		@include mobile-736 {
+			grid-column: 2 span;
+		}
+	}
+
+	&__link {
+		display: block;
+		padding-top: 16px;
+		padding-left: 32px;
+		margin-bottom: 21px;
+		border-top: 1px solid rgba(53, 83, 98, 0.34);
+		transition: all 0.3s ease-in-out;
+		background-position: left top 15px;
+		background-size: 24px 24px;
+		background-repeat: no-repeat;
+
+		&--ted {
+			background-image: url('../img/approach-icon-1.png');
+		}
+
+		&--nyt {
+			background-image: url('../img/approach-icon-2.png');
+		}
+
+		&--state {
+			background-image: url('../img/approach-icon-3.png');
+		}
+
+		&--press {
+			background-image: url('../img/approach-icon-4.png');
+		}
+
+		&--time {
+			background-image: url('../img/approach-icon-5.png');
+		}
+
+		&--freethink {
+			background-image: url('../img/approach-icon-6.png');
+		}
+
+
+		&:focus {
+			outline: none;
+		}
+
+		@include hover {
+			color: var(--accent);
+			border-color: var(--accent);
+		}
+
+		&:active {
+			border-color: var(--active-color);
+			color: var(--active-color);
+		}
+
+	}
+
+	&__link:focus-visible {
+		border-color: var(--active-color);
+	}
+
+	.btn {
+		padding: 16px 34px;
+	}
+}

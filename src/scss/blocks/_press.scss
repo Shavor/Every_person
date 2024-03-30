@@ -1,0 +1,151 @@
+.press {
+	padding: 87px 0;
+
+	@include tablet {
+		padding: 0;
+	}
+
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 87px 0 33px 0;
+
+		@include tablet {
+			padding: 30px 0 30px 0;
+		}
+
+		@include mobile {
+			padding: 33px 0 33px 0;
+		}
+
+		@include mobile-415 {
+			flex-direction: column;
+		}
+
+		@include min-mobile {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+
+	&__titel {
+		font-size: 27px;
+		line-height: 1.4074;
+		letter-spacing: 1.2px;
+		color: #003331;
+		font-family: var(--font-main);
+
+		@include min-mobile {
+			padding-bottom: 10px;
+		}
+	}
+
+	&__link {
+		font-size: var(--font-main);
+		line-height: 1.5384;
+		letter-spacing: 0.02px;
+		color: #00413E;
+		border-radius: 80px;
+		border: 1px solid rgba(53, 83, 98, 0.212);
+		background-color: rgba(53, 83, 98, 0.212);
+
+
+	}
+
+	&__list {
+		row-gap: 32px;
+
+		@include tablet {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__item {
+		grid-column: 4 span;
+		border-top: 1px solid rgba(53, 83, 98, 0.34);
+		padding-top: 16px;
+	}
+}
+
+.press-card {
+	min-width: 145px;
+	position: relative;
+
+
+	&__top {
+		display: flex;
+		justify-content: left;
+		align-items: center;
+		gap: 16px;
+
+		margin-bottom: 11px;
+		font-size: 11px;
+		line-height: 1.4545;
+		letter-spacing: 0.5px;
+		font-family: var(--font-main);
+		color: rgba(53, 83, 98, 0.603);
+	}
+
+	&__author {
+		text-transform: uppercase;
+		padding: 21px 0;
+		padding-left: 37px;
+		margin: -21px 0;
+		transition: all 0.3s ease-in-out;
+		background-position: left top 15px;
+		background-size: 24px 24px;
+		background-repeat: no-repeat;
+
+		&--ted {
+			background-image: url('../img/press-1.png');
+		}
+
+		&--corr {
+			background-image: url('../img/press-2.png');
+		}
+
+		&--dep {
+			background-image: url('../img/press-3.png');
+		}
+
+		&--new {
+			background-image: url('../img/press-4.png');
+		}
+
+		&--correct {
+			background-image: url('../img/press-5.png');
+		}
+
+		&--right {
+			background-image: url('../img/press-6.png');
+		}
+	}
+
+	&__link {
+		font-size: 17px;
+		line-height: 1.4470;
+		color: #00413E;
+		transition: color 0.2s ease-in-out;
+
+		&::after {
+			content: '';
+			position: absolute;
+			inset: 0;
+		}
+
+		&:focus {
+			outline: none;
+		}
+
+		@include hover {
+			color: var(--accent);
+		}
+
+		&:active {
+			border-color: var(--active-color);
+			color: var(--active-color);
+		}
+	}
+}

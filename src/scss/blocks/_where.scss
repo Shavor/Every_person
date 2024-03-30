@@ -1,0 +1,84 @@
+.where {
+	background-color: #001F1F;
+
+	&__content {
+		padding-top: 146px;
+		grid-column: 4 span;
+
+		@include tablet {
+			padding-top: 30px;
+		}
+
+		@include mobile-736 {
+			grid-column: 10 span;
+		}
+
+		@include mobile-667 {
+			grid-column: 9 span;
+			padding-bottom: 20px;
+		}
+
+		@include mobile-415 {
+			grid-column: 4 span;
+		}
+	}
+
+	&__title {
+		font-size: 36px;
+		font-weight: 400;
+		line-height: 1.4444;
+		letter-spacing: 1.2px;
+		color: #FAFAFA;
+		font-family: var(--font-accent);
+		margin-bottom: 43px;
+
+		@include mobile-375 {
+			margin-bottom: 12px;
+		}
+	}
+
+	&__desc {
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 1.5555;
+		color: #FAFAFA;
+		font-family: var(--font-accent);
+		margin-bottom: 37px;
+	}
+
+	&__btn {
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 1.4285;
+		letter-spacing: 0.02px;
+		color: #Ffff;
+		font-family: var(--font-accent);
+		border: 1px solid #00665F;
+	}
+
+	&__map {
+		grid-column: 7/5 span;
+		padding-top: 155px;
+		padding-bottom: 133px;
+
+		@include tablet {
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+
+		@include mobile-736 {
+			grid-column: 12/5 span;
+
+		}
+
+		@include mobile-667 {
+			grid-column: 11/4 span;
+		}
+
+		@include mobile-415 {
+			grid-column: 4 span;
+
+		}
+	}
+
+}

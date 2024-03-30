@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recidiviz Logo</title>
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicons/apple-touch-icon.png"
+    />
+  </head>
+
+  <body>
+    @@include('blocks/header.html') @@include('blocks/mobile-nav.html')
+    <main class="docs">
+      @@include('blocks/hero.html') @@include('blocks/steps.html')
+      @@include('blocks/approach.html') @@include('blocks/infor.html')
+      @@include('blocks/partners.html')
+      <div class="graphics">
+        <img
+          src="../img/graphics.png"
+          srcset="../img/graphics-2x.png"
+          alt="graphics"
+          aria-hidden="true"
+        />
+      </div>
+
+      @@include('blocks/information.html') @@include('blocks/press.html')
+      @@include('blocks/where.html')
+    </main>
+    @@include('blocks/footer.html')
+    <script src="./js/index.bundle.js"></script>
+  </body>
+</html>
