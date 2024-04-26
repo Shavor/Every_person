@@ -68,12 +68,6 @@
 		font-family: var(--font-main);
 		transition: color 0.2s ease-in-out;
 
-		&::after {
-			content: '';
-			position: absolute;
-			inset: 0;
-		}
-
 		&:focus {
 			outline: none;
 		}
